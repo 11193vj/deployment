@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails SeatAllotment: test" uuid="a0c22055-9f2c-49c4-a50a-f67d9c51256e">
+      <database-info product="PostgreSQL" version="9.5.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>vijay</user-name>
+      <introspection-scope>SeatAllotment_test:pg_catalog,public,vijay</introspection-scope>
+      <resolve-scope>SeatAllotment_test:public,vijay</resolve-scope>
+    </data-source>
+    <data-source name="Rails SeatAllotment: production" uuid="d8616fdc-e14a-46a5-af39-62eec477b6e5">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>Seat Allotment</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddff9dfefdfebdffedfebdfe6dfe6dfe5dffedfe7dfefdfe4dffedff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+    <data-source name="Rails SeatAllotment: development" uuid="bfdbcc27-0660-4165-977a-82367c255d14">
+      <database-info product="PostgreSQL" version="9.5.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>vijay</user-name>
+      <introspection-scope>SeatAllotment_development:pg_catalog,public,vijay</introspection-scope>
+      <resolve-scope>SeatAllotment_development:public,vijay</resolve-scope>
+    </data-source>
+  </component>
+</project>

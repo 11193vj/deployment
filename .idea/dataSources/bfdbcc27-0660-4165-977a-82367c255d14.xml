@@ -1,0 +1,443 @@
+<dataSource name="Rails SeatAllotment: development">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+    <database id="1" name="SeatAllotment_development">
+      <object-id>16443</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="2" name="postgres">
+      <object-id>12411</object-id>
+    </database>
+    <database id="3" name="seatAllotment_development">
+      <object-id>16385</object-id>
+    </database>
+    <database id="4" name="seatAllotment_test">
+      <object-id>16386</object-id>
+    </database>
+    <database id="5" name="SeatAllotment_test">
+      <object-id>16444</object-id>
+    </database>
+    <schema id="6" parent="1" name="public">
+      <object-id>2200</object-id>
+      <visible>1</visible>
+      <introspection-state-number>741</introspection-state-number>
+      <introspection-timestamp>2016-09-20.16:10:39.907</introspection-timestamp>
+    </schema>
+    <schema id="7" parent="1" name="pg_catalog">
+      <object-id>11</object-id>
+    </schema>
+    <schema id="8" parent="1" name="pg_toast">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="9" parent="1" name="pg_temp_1">
+      <object-id>11816</object-id>
+    </schema>
+    <schema id="10" parent="1" name="pg_toast_temp_1">
+      <object-id>11817</object-id>
+    </schema>
+    <schema id="11" parent="1" name="information_schema">
+      <object-id>12119</object-id>
+    </schema>
+    <sequence id="12" parent="6" name="allotments_id_seq">
+      <object-id>16500</object-id>
+      <state-number>727</state-number>
+    </sequence>
+    <sequence id="13" parent="6" name="allotseats_id_seq">
+      <object-id>16511</object-id>
+      <state-number>728</state-number>
+    </sequence>
+    <sequence id="14" parent="6" name="branches_id_seq">
+      <object-id>16519</object-id>
+      <state-number>729</state-number>
+    </sequence>
+    <sequence id="15" parent="6" name="choices_id_seq">
+      <object-id>16531</object-id>
+      <state-number>731</state-number>
+    </sequence>
+    <sequence id="16" parent="6" name="colleges_id_seq">
+      <object-id>16542</object-id>
+      <state-number>733</state-number>
+    </sequence>
+    <sequence id="17" parent="6" name="seats_id_seq">
+      <object-id>16489</object-id>
+      <state-number>720</state-number>
+    </sequence>
+    <sequence id="18" parent="6" name="students_id_seq">
+      <object-id>16553</object-id>
+      <state-number>735</state-number>
+    </sequence>
+    <table id="19" parent="6" name="allotments">
+      <object-id>16502</object-id>
+      <state-number>727</state-number>
+    </table>
+    <table id="20" parent="6" name="allotseats">
+      <object-id>16513</object-id>
+      <state-number>728</state-number>
+    </table>
+    <table id="21" parent="6" name="ar_internal_metadata">
+      <object-id>16453</object-id>
+      <state-number>686</state-number>
+    </table>
+    <table id="22" parent="6" name="branches">
+      <object-id>16521</object-id>
+      <state-number>729</state-number>
+    </table>
+    <table id="23" parent="6" name="choices">
+      <object-id>16533</object-id>
+      <state-number>731</state-number>
+    </table>
+    <table id="24" parent="6" name="colleges">
+      <object-id>16544</object-id>
+      <state-number>733</state-number>
+    </table>
+    <table id="25" parent="6" name="schema_migrations">
+      <object-id>16445</object-id>
+      <state-number>685</state-number>
+    </table>
+    <table id="26" parent="6" name="seats">
+      <object-id>16491</object-id>
+      <state-number>720</state-number>
+    </table>
+    <table id="27" parent="6" name="students">
+      <object-id>16555</object-id>
+      <state-number>741</state-number>
+    </table>
+    <column id="28" parent="19" name="id">
+      <state-number>727</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval('allotments_id_seq'::regclass)</default-expression>
+    </column>
+    <column id="29" parent="19" name="regno">
+      <state-number>727</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="30" parent="19" name="choiceno">
+      <state-number>727</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="31" parent="19" name="ccode">
+      <state-number>727</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="32" parent="19" name="bcode">
+      <state-number>727</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="33" parent="19" name="created_at">
+      <state-number>727</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="34" parent="19" name="updated_at">
+      <state-number>727</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="35" parent="19" name="allotments_pkey">
+      <object-id>16509</object-id>
+      <columns>id</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="36" parent="19" name="allotments_pkey">
+      <object-id>16510</object-id>
+      <columns>id</columns>
+      <underlying-index>allotments_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="37" parent="20" name="id">
+      <state-number>728</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval('allotseats_id_seq'::regclass)</default-expression>
+    </column>
+    <column id="38" parent="20" name="bcode">
+      <state-number>728</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="39" parent="20" name="ccode">
+      <state-number>728</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="40" parent="20" name="seatallocated">
+      <state-number>728</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="41" parent="20" name="created_at">
+      <state-number>728</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="42" parent="20" name="updated_at">
+      <state-number>728</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="43" parent="20" name="allotseats_pkey">
+      <object-id>16517</object-id>
+      <columns>id</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="44" parent="20" name="allotseats_pkey">
+      <object-id>16518</object-id>
+      <columns>id</columns>
+      <underlying-index>allotseats_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="45" parent="21" name="key">
+      <state-number>686</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="46" parent="21" name="value">
+      <state-number>686</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="47" parent="21" name="created_at">
+      <state-number>686</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="48" parent="21" name="updated_at">
+      <state-number>686</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="49" parent="21" name="ar_internal_metadata_pkey">
+      <object-id>16459</object-id>
+      <columns>key</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="50" parent="21" name="ar_internal_metadata_pkey">
+      <object-id>16460</object-id>
+      <columns>key</columns>
+      <underlying-index>ar_internal_metadata_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="51" parent="22" name="id">
+      <state-number>729</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval('branches_id_seq'::regclass)</default-expression>
+    </column>
+    <column id="52" parent="22" name="bcode">
+      <state-number>729</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="53" parent="22" name="bname">
+      <state-number>729</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="54" parent="22" name="created_at">
+      <state-number>729</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="55" parent="22" name="updated_at">
+      <state-number>729</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="56" parent="22" name="branches_pkey">
+      <object-id>16528</object-id>
+      <columns>id</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="57" parent="22" name="branches_pkey">
+      <object-id>16529</object-id>
+      <columns>id</columns>
+      <underlying-index>branches_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="58" parent="23" name="id">
+      <state-number>731</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval('choices_id_seq'::regclass)</default-expression>
+    </column>
+    <column id="59" parent="23" name="regno">
+      <state-number>731</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="60" parent="23" name="choiceno">
+      <state-number>731</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="61" parent="23" name="ccode">
+      <state-number>731</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="62" parent="23" name="bcode">
+      <state-number>731</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="63" parent="23" name="created_at">
+      <state-number>731</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="64" parent="23" name="updated_at">
+      <state-number>731</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="65" parent="23" name="choices_pkey">
+      <object-id>16540</object-id>
+      <columns>id</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="66" parent="23" name="choices_pkey">
+      <object-id>16541</object-id>
+      <columns>id</columns>
+      <underlying-index>choices_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="67" parent="24" name="id">
+      <state-number>733</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval('colleges_id_seq'::regclass)</default-expression>
+    </column>
+    <column id="68" parent="24" name="ccode">
+      <state-number>733</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="69" parent="24" name="name">
+      <state-number>733</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="70" parent="24" name="created_at">
+      <state-number>733</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="71" parent="24" name="updated_at">
+      <state-number>733</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="72" parent="24" name="colleges_pkey">
+      <object-id>16551</object-id>
+      <columns>id</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="73" parent="24" name="colleges_pkey">
+      <object-id>16552</object-id>
+      <columns>id</columns>
+      <underlying-index>colleges_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="74" parent="25" name="version">
+      <state-number>685</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar|0</data-type>
+    </column>
+    <index id="75" parent="25" name="schema_migrations_pkey">
+      <object-id>16451</object-id>
+      <columns>version</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="76" parent="25" name="schema_migrations_pkey">
+      <object-id>16452</object-id>
+      <columns>version</columns>
+      <underlying-index>schema_migrations_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="77" parent="26" name="id">
+      <state-number>720</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval('seats_id_seq'::regclass)</default-expression>
+    </column>
+    <column id="78" parent="26" name="college_code">
+      <state-number>720</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="79" parent="26" name="branch_code">
+      <state-number>720</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="80" parent="26" name="no_of_seats">
+      <state-number>720</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <index id="81" parent="26" name="seats_pkey">
+      <object-id>16498</object-id>
+      <columns>id</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="82" parent="26" name="seats_pkey">
+      <object-id>16499</object-id>
+      <columns>id</columns>
+      <underlying-index>seats_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="83" parent="27" name="id">
+      <state-number>735</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval('students_id_seq'::regclass)</default-expression>
+    </column>
+    <column id="84" parent="27" name="name">
+      <state-number>735</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="85" parent="27" name="dob">
+      <state-number>735</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="86" parent="27" name="gender">
+      <state-number>735</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="87" parent="27" name="phone">
+      <state-number>741</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="88" parent="27" name="score">
+      <state-number>735</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="89" parent="27" name="email">
+      <state-number>735</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="90" parent="27" name="password_digest">
+      <state-number>735</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="91" parent="27" name="created_at">
+      <state-number>735</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="92" parent="27" name="updated_at">
+      <state-number>735</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="93" parent="27" name="regno">
+      <state-number>736</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <index id="94" parent="27" name="students_pkey">
+      <object-id>16562</object-id>
+      <columns>id</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="95" parent="27" name="students_pkey">
+      <object-id>16563</object-id>
+      <columns>id</columns>
+      <underlying-index>students_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

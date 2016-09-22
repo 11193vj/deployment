@@ -1,0 +1,21 @@
+<!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <h1 class="brand-heading">fill your details</h1>
+ <h1> users login </h1>
+<div>
+<%= form_for(:session, url:login_path) do |f| %>
+	<%= f.text_field :regno, :placeholder => "userid" %><br>
+	<%= f.password_field :password_digest, :placeholder => "password" %><br>
+	<%= f.submit "log in", class: "btn-submit" %><br>
+	<%= link_to "Back", :back %>
+<% end %>
+</div>
+                   
+                
+                </div>
+            </div>
+    </section>
+

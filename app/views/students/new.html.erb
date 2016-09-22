@@ -1,0 +1,52 @@
+ <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <h1 class="brand-heading">fill your details</h1>
+                    <h2>About Seat Allotment</h2>
+                    <%= form_for @student do |f| %>
+  <p>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
+ 
+    <p>
+      <%= f.label :date_of_birth %><br>
+      <%= f.text_field :dob %>
+    </p>
+  <p>
+      <%= f.label :gender %><br>
+      <%= f.text_field :gender %>
+    </p>
+    <p>
+      <%= f.label :phone %><br>
+      <%= f.text_field :phone %>
+    </p>
+    <p>
+      <%= f.label :rank %><br>
+      <%= f.text_field :score %>
+    </p> 
+    <p>
+      <%= f.label :email %><br>
+      <%= f.text_field :email %>
+    </p>
+    <p>
+      <%= f.label :regno %><br>
+      <%= f.text_field :regno %>
+    </p>
+    <p>
+      <%= f.label :password %><br>
+      <%= f.password_field :password_digest %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p><br>
+    <%= link_to "Back", :back %>
+<% end %>
+                   
+                
+                </div>
+            </div>
+    </section>
+

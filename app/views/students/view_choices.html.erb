@@ -1,0 +1,16 @@
+<h1>Available choices</h1>
+
+<table>
+		<tr>
+			<th>code</th>
+			<th>name</th>
+			<th> <colspan="3"></th>
+		</tr>
+		
+		 <% @college.each do |article| %>
+			<tr>
+				<td><%= article.college_code %></td>
+				<td><%= article.college_name %></td>
+			</tr>
+		 <% end %>
+	</table>

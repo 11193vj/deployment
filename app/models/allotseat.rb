@@ -1,0 +1,2 @@
+class Allotseat < ApplicationRecord
+end

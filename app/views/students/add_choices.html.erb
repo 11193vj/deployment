@@ -1,0 +1,13 @@
+<form>
+  <select name="dep">
+    <option>select</option>
+  <%= @college.each do |f| %>
+    <option><%= f.college_code %></option>
+  <% end %>
+  </select>
+ <%= $department %>
+  <select name="cname">
+    <option>branch name</option>
+  </select>
+
+</form>
